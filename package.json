@@ -10,11 +10,15 @@
   },
   "dependencies": {
     "@google/genai": "^1.30.0",
-    "framer-motion": "^11.0.0",
-    "lucide-react": "^0.468.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.28.0"
+    "framer-motion": "11.0.8",
+    "lucide-react": "^0.469.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "6.22.3"
+  },
+  "overrides": {
+    "react": "$react",
+    "react-dom": "$react-dom"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
