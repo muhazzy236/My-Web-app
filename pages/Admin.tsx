@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { GlassCard } from '../components/GlassCard';
 import { db, Lead, Analytics } from '../services/db';
@@ -188,7 +187,7 @@ export const Admin: React.FC = () => {
                                 <div className="space-y-4">
                                     {Object.entries(analytics?.leadsByService || {}).map(([service, count], idx) => {
                                         const total = analytics?.totalLeads || 1;
-                                        const percent = Math.round((count / total) * 100);
+                                        const percent = Math.round(((count as number) / total) * 100);
                                         return (
                                             <div key={idx}>
                                                 <div className="flex justify-between text-sm mb-1">
